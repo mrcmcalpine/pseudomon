@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pseudomon Revision Arena+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Cambridge IGCSE Computer Science 0478</p>
+        <h1>Pseudomon Revision Arena+</h1>
+        <p class="subtitle">Quiz, collect, build your battle squad, hire a trainer, and crack open single or multi-card packs with flip reveals.</p>
+      </div>
+      <div class="topbar-stats">
+        <div class="stat-chip"><span>💾 Coins</span><strong id="coin-balance">0</strong></div>
+        <div class="stat-chip"><span>📚 Answered</span><strong id="answered-count">0</strong></div>
+        <div class="stat-chip"><span>⚔️ Team</span><strong id="team-count">0</strong></div>
+      </div>
+    </header>
+    <nav class="nav-tabs">
+      <button class="nav-btn active" data-view="home">Home</button>
+      <button class="nav-btn" data-view="topics">Topics</button>
+      <button class="nav-btn" data-view="shop">Shop</button>
+      <button class="nav-btn" data-view="collection">Collection</button>
+      <button class="nav-btn" data-view="battle">Battle</button>
+      <button class="nav-btn" data-view="stats">Stats</button>
+    </nav>
+    <main>
+      <section id="view-home" class="view active"></section>
+      <section id="view-topics" class="view"></section>
+      <section id="view-quiz" class="view"></section>
+      <section id="view-results" class="view"></section>
+      <section id="view-shop" class="view"></section>
+      <section id="view-collection" class="view"></section>
+      <section id="view-battle" class="view"></section>
+      <section id="view-stats" class="view"></section>
+    </main>
+  </div>
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
