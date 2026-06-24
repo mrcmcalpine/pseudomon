@@ -1861,6 +1861,22 @@ const QUESTION_BANK = [
       "boolean"
     ]
   },
+    {
+    "id": "bl-0079",
+    "topic": "Boolean logic",
+    "type": "typed",
+    "question": "What gate has only ONE input?",
+    "acceptableAnswers": [
+      "NOT",
+      "Not",
+      "not"
+    ],
+    "explanation": "A Boolean value has only two possible states: TRUE or FALSE.",
+    "difficulty": "easy",
+    "tags": [
+      "boolean"
+    ]
+  },
   {
     "id": "bl-008",
     "topic": "Boolean logic",
